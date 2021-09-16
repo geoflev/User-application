@@ -1,0 +1,30 @@
+<header class="bg-gray pt-5">
+    <div class="container mx-auto px-2 py-4">
+        <h2>Users App</h2>
+        <nav mat-tab-nav-bar class="mt-10 border-0 bg-transparent">
+            <a mat-tab-link routerLink="dashboard">
+                <i class="fa fa-home fa-fw mr-4 text-purple-700"></i>
+                <span class="text-left text-md">
+                    Dashboard
+                </span>
+            </a>
+            <a mat-tab-link routerLink="users">
+                <i class="fa fa-users fa-fw mr-4 text-purple-700"></i>
+                <span>Users</span>
+            </a>
+            <a mat-tab-link routerLink="projects">
+                <i class="fa fa-folder fa-fw mr-4 text-purple-700"></i>
+                <span>Projects</span>
+            </a>
+        </nav>
+    </div>
+</header>
+<main class="py-10">
+    <div class="container mx-auto px-4 bg-gray-500">
+        <router-outlet></router-outlet>
+    </div>
+</main>
+<footer class="container mx-auto">
+    <div class="container mx-auto">
+    </div>
+  </footer>
